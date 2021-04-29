@@ -136,8 +136,8 @@ html {
 }
 
 .menu .image img {
-    width: 200px;
-    height: 200px;
+    width: 75%;
+    height: 75%;
     border-radius: 50%;
     text-align: center;
 }
@@ -387,6 +387,12 @@ button:hover {
 .right-image-post .white-button,
 .left-image-post .white-button {
     margin-top: 30px;
+}
+
+/* Resume */
+.resume{
+    width: 100%;
+    min-height: 75vh;
 }
 
 
