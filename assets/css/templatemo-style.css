@@ -485,25 +485,38 @@ button:hover {
     background-image: url(../images/fourth-main-icon.png);
 }
 
+.circle-icon{
+    background: #DAA520;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
+    padding: 30px;
+}
+
 /* HEXAGONS */
 #honeycomb {
     width: 100%;
     height: 100%;
+    padding: 0 0 0 10%;
 }
 
 #honeycomb li {
     list-style-type: none;
     position: relative;
     float: left;
-    width: 27.85714285714286%;
-    /* width: 50%; */
-    padding: 0 0 32.16760145166612% 0;
+    /* width: 27.85714285714286%; */
+    width: 35%;
+    /* padding: 0 0 32.16760145166612% 0; */
+    padding: 0 0 40.697% 0;
     -o-transform: rotate(-60deg) skewY(30deg);
     -moz-transform: rotate(-60deg) skewY(30deg);
     -webkit-transform: rotate(-60deg) skewY(30deg);
     -ms-transform: rotate(-60deg) skewY(30deg);
     transform: rotate(-60deg) skewY(30deg);
-    background: #fd005f;
+    /* background: #fd005f; */
     background-color: transparent;
     overflow: hidden;
     visibility: hidden;
@@ -535,17 +548,31 @@ button:hover {
     text-align: center;
     justify-content: center;
     align-items: flex-start;
-    padding: 30% 5px 5px 5px;
+    padding: 17% 5px 5px 5px;
 }
 
 #honeycomb li .hexagon h4{
-    font-size: 3vh;
-    /* font-size: 150%; */
+    /* font-size: 1vmax; */
+    font-size: 1.5vmax;
 }
 
-#honeycomb li .hexagon p{
-    font-size: 2vh;
+
+@media screen and (max-width: 845px) {
+    #honeycomb li .hexagon p{
+        /* font-size: 1vmax; */
+        line-height: 1.5em;
+        font-size: 1.5vmax;
+    }
 }
+
+@media screen and (min-width: 846px) {
+    #honeycomb li .hexagon p{
+        /* font-size: 1vmax; */
+        line-height: 1.5em;
+        font-size: 1vmax;
+    }
+}
+
 
 #honeycomb li .hexagon:hover {
     /* background-color: rgba(250, 250, 250, 1); */
@@ -556,13 +583,15 @@ button:hover {
     color: #1e1e1e;
 }
 
-#honeycomb li:nth-child(3n+2) {
+#honeycomb li:nth-child(2n) { /* 3n+2 */
     margin: 0 1%;
 }
 
-#honeycomb li:nth-child(6n+4), #honeycomb li:nth-child(6n+5), #honeycomb li:nth-child(6n+6) {
-    margin-top: -6.9285714285%;
-    margin-bottom: -6.9285714285%;
+#honeycomb li:nth-child(4n+3), #honeycomb li:nth-child(4n) { /* 6n+4, 6n+5, 6n+6 */
+    /* margin-top: -6.9285714285%; */
+    /* margin-bottom: -6.9285714285%; */
+    margin-top: -9%;
+    margin-bottom: -9%;
     -o-transform: translateX(50%) rotate(-60deg) skewY(30deg);
     -moz-transform: translateX(50%) rotate(-60deg) skewY(30deg);
     -webkit-transform: translateX(50%) rotate(-60deg) skewY(30deg);
@@ -570,12 +599,12 @@ button:hover {
     transform: translateX(50%) rotate(-60deg) skewY(30deg);
 }
 
-#honeycomb li:nth-child(6n+4) { 
-    margin-left: 0.5%;
+#honeycomb li:nth-child(4n+3) { /* 6n+4 */ 
+    margin-left: .5%;
 }
 
 /* Experiences Cards*/
-.experience-item{
+.exp-item{
     margin-bottom: 10px;
     padding: 20px;
     background-color: rgba(250, 250, 250, 0.1);
@@ -591,15 +620,15 @@ button:hover {
     border-radius: 5px;
 }
 
-.experience-item:hover {
+.exp-item:hover {
     background-color: rgba(250, 250, 250, 1);
 }
 
-.experience-item:hover h4 {
+.exp-item:hover h4 {
     color: #1e1e1e;
 }
 
-.experience-item:hover p {
+.exp-item:hover p {
     color: #4a4a4a;
 }
 
@@ -659,11 +688,13 @@ section.my-work .section-heading {
 
 .isotope-item {
     position: relative;
-    width: 48%;
-    margin: 1%;
-    border-bottom: 2px solid rgba(250,250,250,0.1);
-    padding-bottom: 30px;
-    margin-bottom: 30px;
+    /* width: 48%; */
+    width: 100%;
+    /* margin: 1%; */
+    /* border-bottom: 2px solid rgba(250,250,250,0.1); */
+    /* padding-bottom: 30px; */
+    /* margin-bottom: 30px; */
+    margin-bottom: 10px;
 }
 
 .isotope-item img {
