@@ -676,13 +676,17 @@ section.my-work .section-heading {
     border-radius: 5px;
 }
 
-.isotope-item a{
+.isotope-item a {
     color: #DAA520;
+}
+
+.isotope-item h5 {
+    font-weight: bolder;
 }
 
 .isotope-item ul {
     list-style: disc;
-    /* padding-bottom: 10px; */
+    padding-bottom: 10px;
 }
 
 .isotope-item:hover {
@@ -691,6 +695,11 @@ section.my-work .section-heading {
 
 .isotope-item:hover h4 {
     color: #1e1e1e;
+}
+
+.isotope-item:hover h5 {
+    color: #1e1e1e;
+    font-weight: bolder;
 }
 
 .isotope-item:hover p, .isotope-item:hover ul{
